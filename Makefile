@@ -3,3 +3,6 @@ compile:
 
 run:
 	go run main.go person.pb.go
+
+benchmark:
+	go test -test.run=XXX -bench=. -benchmem -memprofile memprofile.out -cpuprofile profile.out
